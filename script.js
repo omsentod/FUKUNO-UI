@@ -6,7 +6,7 @@ function getInitials(name) {
   }
   
   // Nama pengguna yang ingin diganti inisialnya
-  const userName = "John Doe"; // Ganti dengan nama pengguna yang diinginkan
+  const userName = "Rifqi Widyadana"; // Ganti dengan nama pengguna yang diinginkan
   const initials = getInitials(userName); // Dapatkan inisial
   
   // Ganti inisial di dalam div dengan id 'initials'
