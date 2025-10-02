@@ -209,17 +209,24 @@ body{
       }
 
       .task-name{
-       margin: 0px 30px 20px 0;
+       margin: 0px 0px 20px 0;
+       display: flex;
+       justify-content: center;
+       font-weight: var(--font-semibold);
+       font-size: 20px;
       }
 
       .total-task{
-        margin-top:10px;
+        color: var(--ctn-color);
         font-weight: var(--font-semibold);
       }
 
       .task-clr{
         width: 55px;
         height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: #3498db;
         border-radius: 100%;
         margin-bottom: 10px;
@@ -266,11 +273,17 @@ body{
       }
       
      
-      .data-table tr:hover {
+      .data-table tr:hover td {
         background-color: var(--main-color); 
         cursor: pointer;
+        color: var(--ctn-color);
       }
       
+      .data-table th:hover{
+        cursor: pointer;
+        color: var(--main-color);
+      }
+
       .data-table th, .data-table td {
         text-align: left;
       }
@@ -331,11 +344,17 @@ body{
       }
       
      
-      .dldata-table tr:hover {
+      .dldata-table tr:hover td {
         color: var(--txt-color);
         background-color: #f2f2f2; 
         cursor: pointer;
       }
+      
+      .dldata-table th:hover{
+        cursor: pointer;
+        color:var(--txt-color);
+      }
+
       
       .dldata-table th, .data-table td {
         text-align: left;
