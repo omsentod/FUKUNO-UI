@@ -131,7 +131,7 @@ body{
         width: 100%;
         height: 100%;
         top: 130px;
-        margin-left: 350px;
+        margin-left: 330px;
         padding: 20px;
         z-index: -2;
         /* background-color: var(--main-color); */
@@ -143,19 +143,49 @@ body{
         left: 0;
         display: flex;
         align-items: flex-start;
-        width: 100%;
+        width: 80%;
         height: 100px;
-        margin: 10px 0 0 10px;
-        background-color: var(--ctn-color);
+        /* background-color: var(--ctn-color); */
       }
 
       .task-category{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         width: 250px ;
-        background-color: var(--main-color);
+        background-color: var(--ctn-color);
         height: 100px;
-        margin-left: 30px ;
+        margin-left: 25px ;
+        outline: 0.5px solid rgb(88, 88, 88) ;
+        border-radius: 10px;   
+        box-shadow: 2px 5px;  
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
       }
 
+      .task-category:hover {
+        cursor: pointer;
+        transform: translateY(-10px); 
+        /* box-shadow: 0 0 0 6px #ff0000;  */
+      }
+
+      .task-name{
+       margin: 0px 30px 20px 0;
+      }
+
+      .total-task{
+        margin-top:10px;
+        font-weight: var(--font-semibold);
+      }
+
+      .task-clr{
+        width: 55px;
+        height: 55px;
+        background-color: #3498db;
+        border-radius: 100%;
+        margin-bottom: 10px;
+      }
+
+      
   
       /* Tombol Toggle Sidebar */
       .toggle-btn {
